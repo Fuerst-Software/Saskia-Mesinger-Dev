@@ -1,0 +1,83 @@
+/* ===========================================================
+   Mobile-Feinschliff (alle Seiten) – Relaunch 2026
+   Wird nach den Seiten-Styles geladen.
+=========================================================== */
+@media (max-width: 600px){
+
+  /* Lange deutsche Wörter (z. B. „Geschäftsbedingungen“) sauber trennen statt überlaufen */
+  /* !important, weil responsive.js per Inline-Style „overflow-wrap:anywhere“ setzt
+     (das bricht Wörter ohne Trennstrich mitten durch) */
+  h1, h2, h3, .title, .title-xl{
+    -webkit-hyphens: auto !important;
+    hyphens: auto !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+
+  /* Lange H1 der Unterseiten etwas kleiner, damit ganze Wörter passen */
+  .title--page{
+    font-size: clamp(1.45rem, 6.6vw, 2rem) !important;
+    letter-spacing: .05em !important;
+    line-height: 1.25 !important;
+  }
+
+  /* Rechtsseiten: eingebundener Rechtstext (IT-Recht Kanzlei) */
+  .legal-wrap h1{ font-size: 1.5rem; line-height: 1.25; }
+  .legal-wrap h2{ font-size: 1.2rem; letter-spacing: .04em; line-height: 1.3; }
+  .card > h2{ letter-spacing: .04em; }
+
+  /* Startseite: Claim passt auch auf 360 px */
+  .welcome-title--claim{
+    font-size: clamp(1.5rem, 7.4vw, 2.2rem) !important;
+    letter-spacing: .04em !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Kurze Seiten-H1 (z. B. „Über mich“, „Häufige Fragen“) auf eine Zeile */
+  .title--xl:not(.title--page){
+    font-size: clamp(1.9rem, 9vw, 2.6rem) !important;
+    letter-spacing: .1em !important;
+  }
+
+  /* Verschachtelte Karten (z. B. Lexware-Angebote): weniger Innenabstand, mehr Textbreite */
+  .card .card--inner{ padding: 16px !important; }
+  .card .offer{ padding: 14px !important; }
+  .offer .btn{ padding: 10px 14px; letter-spacing: .08em; }
+  .card{ padding: 20px !important; }
+
+  /* Abschnitts-Kacheln der Unterseiten: nichts ragt über den Rand */
+  .navgrid__btn{
+    min-width: 0;
+    font-size: .78rem !important;
+    letter-spacing: .05em !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    -webkit-hyphens: manual;
+    hyphens: manual;
+  }
+}
+
+/* Touch-Geräte bis Tablet-Breite: Tippflächen und Mindest-Schriftgröße */
+@media (max-width: 900px){
+  /* Größere Tippflächen (mind. ~40 px) */
+  footer.sm-footer nav a{ padding: 9px 12px; }
+  .faq-search__actions .btn{ padding: 11px 16px; font-size: .75rem; }
+
+  /* Mini-Beschriftungen nicht unter 12 px */
+  .field__label, .faq-search__label, .tag{ font-size: .78rem; }
+  footer.sm-footer .sm-footer__meta a{ display:inline-block; padding: 10px 4px; }
+  .btn-chip{ padding: 11px 20px; font-size: .78rem; }
+}
+
+/* Sehr kleine Handys (≤ 380 px, z. B. iPhone SE) */
+@media (max-width: 380px){
+  /* Kundenstimmen: Kategorie + Sterne unter den Namen statt daneben */
+  .tcard__top{ flex-wrap: wrap; }
+  .tcard__right{ align-items: flex-start; }
+
+  /* FAQ-Fragen dürfen umbrechen */
+  .faq__q{ min-width: 0; }
+  .faq__h{ min-width: 0; flex: 1 1 auto; overflow-wrap: break-word; }
+}
+

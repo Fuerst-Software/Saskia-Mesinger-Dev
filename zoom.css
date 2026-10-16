@@ -1,0 +1,7 @@
+/* ===========================================================
+   Standard-Zoom 80 % (Desktop)
+   Auf Handys/Tablets bleibt 100 %, sonst wird die Schrift zu klein.
+=========================================================== */
+@media (min-width: 901px){
+  html{ zoom: .8; }
+}
