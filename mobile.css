@@ -14,6 +14,15 @@
     word-break: normal !important;
   }
 
+  /* Namen nie trennen (echte Handys haben ein deutsches Trennwörterbuch
+     und würden sonst „MESIN-GER“ trennen) */
+  .card-name, .lux-brand, .lux-brand-top, .sm-footer__name, .tcard__name{
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
+  }
+
   /* Lange H1 der Unterseiten etwas kleiner, damit ganze Wörter passen */
   .title--page{
     font-size: clamp(1.45rem, 6.6vw, 2rem) !important;
