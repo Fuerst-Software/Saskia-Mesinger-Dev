@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Kundenstimmen | Buchhaltung &amp; Unternehmensunterstützung Saskia Mesinger</title>
+  <meta name="description" content="Erfahrungen von Kunden mit Saskia Mesinger in den Bereichen Buchhaltung, digitale Prozesse, Lexware Office und Unternehmensunterstützung." />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../footer.css" />
+</head>
+
+<body>
+  <!-- Scroll progress -->
+  <div class="scrollbar" aria-hidden="true">
+    <div class="scrollbar__fill" id="scrollFill"></div>
+  </div>
+
+  <main class="page" id="top">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Seitenkopf">
+      <div class="hero__title">
+        <p class="kicker">Kundenstimmen</p>
+        <h1 class="title title--xl title--page">Das sagen meine Kunden</h1>
+        <div class="wave wave--hero" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--ghost" href="../index.html#top">← Zur Startseite</a>
+      </div>
+    </section>
+
+    <!-- HEADER / FILTERS -->
+    <section class="section" id="testimonials" aria-label="Kundenstimmen">
+      <header class="section__head reveal">
+        <h2 class="title">Zusammenarbeit, die im Alltag funktioniert</h2>
+        <div class="wave" aria-hidden="true"></div>
+      </header>
+
+      <div class="card intro reveal">
+        <div class="prose">
+          <p>Eine gute Zusammenarbeit zeigt sich nicht nur darin, dass Aufgaben erledigt werden. Sie zeigt sich vor allem darin, ob ein Unternehmen danach mehr Struktur, bessere Übersicht und verlässlichere Prozesse hat.</p>
+          <p>Hier berichten Kunden von ihren Erfahrungen mit meiner Unterstützung.</p>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="toolbar">
+          <div class="toolbar__left">
+            <div class="field">
+              <div class="field__label">Suche</div>
+              <input
+                class="field__input"
+                id="searchInput"
+                type="search"
+                placeholder="Name, Lexware, Buchhaltung, Zusammenarbeit …"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="field">
+              <div class="field__label">Kategorie</div>
+              <select class="field__input" id="categorySelect">
+                <option value="">Alle</option>
+                <option value="Lexware / Buchhaltung">Lexware / Buchhaltung</option>
+                <option value="Zusammenarbeit">Zusammenarbeit</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="pill" id="countPill">0 Einträge</div>
+        </div>
+
+        <div class="chips" aria-hidden="true">
+          <span class="chip">Kompetent</span>
+          <span class="chip">Geduldig</span>
+          <span class="chip">Verständlich</span>
+          <span class="chip">Schnell</span>
+          <span class="chip">Qualität</span>
+        </div>
+      </div>
+
+      <!-- GRID -->
+      <div class="grid grid--3 reveal" id="testimonialsGrid"></div>
+
+      <!-- Empty State (falls keine Stimmen vorhanden sind) -->
+      <div class="card empty reveal" id="emptyState" style="display:none;">
+        <div class="empty__inner">
+          <div class="empty__badge">Noch keine veröffentlichten Kundenstimmen</div>
+          <div class="prose">
+            <p>Sobald die ersten Rückmeldungen vorliegen, werden sie hier veröffentlicht.</p>
+          </div>
+
+          <div class="empty__actions">
+            <a class="btn" href="../index.html#kontakt-start">Kontakt aufnehmen</a>
+            <a class="btn btn--ghost" href="../index.html#top">Zur Startseite</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="sm-footer">
+      <p class="sm-footer__name">Saskia Mesinger</p>
+      <p class="sm-footer__services">Digitale Buchhaltung · Lohnabrechnung · Finanzcontrolling · Forecasting · Lexware Office</p>
+      <p class="sm-footer__claim">Für Startups, Kleinunternehmer, Selbstständige, Einzelunternehmen und Kapitalgesellschaften - digital und deutschlandweit.</p>
+
+      <nav aria-label="Footer-Navigation">
+        <a href="../Buchhaltung/index.html">Buchhaltung</a>
+        <a href="../Lohnabrechnung/index.html">Lohnabrechnung</a>
+        <a href="../LexwareOffice/index.html">Lexware Office &amp; Schulungen</a>
+        <a href="../Vorlagen/index.html">Vorlagen &amp; Tools</a>
+        <a href="../UeberMich/index.html">Über mich</a>
+        <a href="../index.html#kontakt-start">Kontakt</a>
+      </nav>
+
+      <nav class="sm-footer__legal" aria-label="Rechtliches">
+        <a href="../impressum.html">Impressum</a>
+        <a href="../datenschutz.html">Datenschutz</a>
+        <a href="../Agb.html">AGB</a>
+        <a href="../Widerruf.html">Widerruf</a>
+      </nav>
+
+      <div class="sm-footer__meta">
+        <span>© <span id="year"></span> Saskia Mesinger</span>
+        <span>Website erstellt durch <a href="https://fuerst-software.com" target="_blank" rel="noopener noreferrer">Fürst Software &amp; Web Development</a></span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+  <script src="../responsive.js" defer></script>
+</body>
+</html>

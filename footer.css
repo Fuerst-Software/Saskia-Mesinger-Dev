@@ -1,0 +1,70 @@
+/* ===========================================================
+   Einheitlicher Footer (alle Seiten) – Relaunch 2026
+=========================================================== */
+footer.sm-footer{
+  margin-top:56px;
+  padding:34px 0 8px;
+  border-top:1px solid rgba(255,255,255,.16);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+  text-align:center;
+  color:#8b847c;
+  font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:.85rem;
+  line-height:1.6;
+}
+footer.sm-footer .sm-footer__name{
+  margin:0;
+  font-family:"Cormorant Garamond","Times New Roman",serif;
+  font-size:1.6rem;
+  font-weight:600;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#ffd979;
+}
+footer.sm-footer .sm-footer__services{
+  margin:0;
+  font-size:.82rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#f1c75c;
+}
+footer.sm-footer .sm-footer__claim{
+  margin:0;
+  max-width:640px;
+  color:#cfc6bb;
+}
+footer.sm-footer nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:6px 0;
+}
+footer.sm-footer nav a{
+  padding:2px 12px;
+  color:#cfc6bb;
+  text-decoration:none;
+  border-left:1px solid rgba(255,255,255,.18);
+  transition:color 150ms ease-out;
+}
+footer.sm-footer nav a:first-child{ border-left:0; }
+footer.sm-footer nav a:hover{ color:#ffd979; }
+footer.sm-footer .sm-footer__legal a{ font-size:.78rem; color:#8b847c; }
+footer.sm-footer .sm-footer__meta{
+  margin-top:10px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:6px 18px;
+  font-size:.75rem;
+  color:#8b847c;
+}
+footer.sm-footer .sm-footer__meta a{ color:#8b847c; text-decoration:none; }
+footer.sm-footer .sm-footer__meta a:hover{ color:#ffd979; }
+
+@media (max-width:600px){
+  footer.sm-footer .sm-footer__name{ font-size:1.35rem; }
+  footer.sm-footer .sm-footer__services{ letter-spacing:.06em; }
+}

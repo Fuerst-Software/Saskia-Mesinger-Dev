@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>FAQ Buchhaltung, Lohnabrechnung &amp; Lexware Office | Saskia Mesinger</title>
+  <meta name="description" content="Antworten zu Buchhaltung, Startups, Kleinunternehmern, Buchhaltungsrückständen, Lohnabrechnung, Controlling, Lexware Office und Steuerberater-Kooperationen." />
+  <meta name="robots" content="index,follow" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../footer.css" />
+</head>
+
+<body>
+  <!-- Scroll progress -->
+  <div class="scrollbar" aria-hidden="true">
+    <div class="scrollbar__fill" id="scrollFill"></div>
+  </div>
+
+  <main class="page" id="top">
+
+    <!-- HERO / TITLE -->
+    <section class="hero" aria-label="Seitenkopf">
+      <div class="hero__title">
+        <p class="kicker">FAQ</p>
+        <h1 class="title title--xl">Häufige Fragen</h1>
+        <div class="wave wave--hero" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--ghost" href="../index.html#top">← Zur Startseite</a>
+      </div>
+    </section>
+
+   
+   <!-- SEARCH (statt Navigation) -->
+<section class="section" id="suche" aria-label="FAQ Suche">
+
+  <div class="card reveal">
+    <div class="faq-search">
+      <div class="faq-search__row">
+        <label class="faq-search__field">
+          <span class="faq-search__label">Suche</span>
+          <input
+            id="faqSearch"
+            class="faq-search__input"
+            type="search"
+            placeholder="z. B. Startup, Rückstand, Lohnabrechnung, Lexware Office …"
+            autocomplete="off"
+          />
+        </label>
+
+        <div class="faq-search__actions">
+          <button class="btn btn--mini" type="button" id="faqOpenAll">Alle öffnen</button>
+          <button class="btn btn--mini btn--ghost" type="button" id="faqCloseAll">Alle schließen</button>
+        </div>
+      </div>
+
+      <div class="faq-search__meta">
+        <div class="pill" id="faqCount">0 Treffer</div>
+        <button class="btn btn--mini btn--ghost" type="button" id="faqClear" style="display:none;">Zurücksetzen</button>
+      </div>
+
+      <div class="faq-search__empty" id="faqEmpty" style="display:none;">
+        Keine Treffer. Bitte versuchen Sie einen anderen Begriff.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTENT -->
+    <section class="stack">
+
+      <!-- FAQ ACCORDION -->
+      <section class="block reveal" id="faq">
+
+        <div class="card">
+          <div class="faq">
+
+            <details class="faq__item" id="startups" open>
+              <summary class="faq__q"><h2 class="faq__h">Betreuen Sie auch Startups?</h2></summary>
+              <div class="faq__a prose">
+                <p>Ja. Ich unterstütze ausdrücklich Startups und junge Unternehmen dabei, ihre Buchhaltung und digitalen Prozesse von Beginn an professionell aufzubauen.</p>
+              </div>
+            </details>
+            <details class="faq__item" id="kleinunternehmer">
+              <summary class="faq__q"><h2 class="faq__h">Betreuen Sie auch Kleinunternehmer?</h2></summary>
+              <div class="faq__a prose">
+                <p>Ja. Auch Kleinunternehmer, Solo-Selbstständige und sehr kleine Unternehmen gehören zu meinen Kunden. Professionelle Buchhaltung ist für mich keine Frage der Unternehmensgröße.</p>
+              </div>
+            </details>
+            <details class="faq__item" id="rueckstand">
+              <summary class="faq__q"><h2 class="faq__h">Meine Buchhaltung hat mehrere Monate Rückstand. Können Sie trotzdem helfen?</h2></summary>
+              <div class="faq__a prose">
+                <p>Ja. Die strukturierte Aufarbeitung von Buchhaltungsrückständen gehört ausdrücklich zu meinem Leistungsangebot. Sie müssen Ihre Unterlagen nicht erst selbst vollständig aufarbeiten, bevor Sie sich melden.</p>
+              </div>
+            </details>
+            <details class="faq__item" id="verstaendnis">
+              <summary class="faq__q"><h2 class="faq__h">Ich verstehe Buchhaltung kaum. Ist das ein Problem?</h2></summary>
+              <div class="faq__a prose">
+                <p>Nein. Ein höherer Erklärungs- und Betreuungsbedarf ist kein Ausschlusskriterium. Ich begleite auch Kunden, die ihre Buchhaltung gemeinsam Schritt für Schritt aufbauen möchten.</p>
+              </div>
+            </details>
+            <details class="faq__item" id="abrechnung">
+              <summary class="faq__q"><h2 class="faq__h">Rechnen Sie Ihre Buchhaltung pauschal ab?</h2></summary>
+              <div class="faq__a prose">
+                <p>In der Regel erfolgt die Abrechnung auf Stundenbasis. Dadurch bezahlen Sie den tatsächlich entstandenen Aufwand und keine dauerhaft kalkulierte Pauschale mit zusätzlichem Sicherheitspuffer.</p>
+              </div>
+            </details>
+            <details class="faq__item" id="controlling">
+              <summary class="faq__q"><h2 class="faq__h">Bieten Sie auch Controlling an?</h2></summary>
+              <div class="faq__a prose">
+                <p>Ja. Aufgrund meiner langjährigen Erfahrung im kaufmännischen Projektmanagement unterstütze ich Unternehmen auch bei Finanzcontrolling, Kostenanalysen und betriebswirtschaftlicher Betrachtung ihrer Zahlen.</p>
+              </div>
+            </details>
+            <details class="faq__item" id="forecasting">
+              <summary class="faq__q"><h2 class="faq__h">Unterstützen Sie beim Forecasting?</h2></summary>
+              <div class="faq__a prose">
+                <p>Ja. Forecasting gehört zu meinen langjährigen beruflichen Schwerpunkten. Auf Basis der vorhandenen Unternehmenszahlen können wir Entwicklungen betrachten und zukünftige Kosten, Umsätze und finanzielle Situationen strukturiert planen.</p>
+              </div>
+            </details>
+            <details class="faq__item" id="gmbh">
+              <summary class="faq__q"><h2 class="faq__h">Arbeiten Sie auch für GmbHs?</h2></summary>
+              <div class="faq__a prose">
+                <p>Ja. Ich betreue sowohl Selbstständige und Einzelunternehmen als auch Kapitalgesellschaften wie GmbHs und UGs.</p>
+              </div>
+            </details>
+            <details class="faq__item" id="software">
+              <summary class="faq__q"><h2 class="faq__h">Welche Buchhaltungsprogramme nutzen Sie?</h2></summary>
+              <div class="faq__a prose">
+                <p>Ich arbeite insbesondere mit Lexware Office, Lexware, BuchhaltungsButler und sevDesk.</p>
+              </div>
+            </details>
+            <details class="faq__item" id="steuerberater">
+              <summary class="faq__q"><h2 class="faq__h">Muss ich bereits einen Steuerberater haben?</h2></summary>
+              <div class="faq__a prose">
+                <p>Nein. Es bestehen Kooperationen mit mehreren Steuerberatern und Steuerkanzleien. Bei Bedarf kann auf Anfrage ein Kontakt hergestellt werden.</p>
+              </div>
+            </details>
+            <details class="faq__item" id="jahresabschluss">
+              <summary class="faq__q"><h2 class="faq__h">Erstellen Sie Jahresabschlüsse und Steuererklärungen?</h2></summary>
+              <div class="faq__a prose">
+                <p>Jahresabschlüsse, Steuererklärungen und steuerliche Beratung werden durch einen Steuerberater erbracht. Ich kann die laufende Buchhaltung entsprechend vorbereiten und die Übergabe beziehungsweise Abstimmung unterstützen.</p>
+              </div>
+            </details>
+            <details class="faq__item" id="lohn">
+              <summary class="faq__q"><h2 class="faq__h">Bieten Sie Lohnabrechnung an?</h2></summary>
+              <div class="faq__a prose">
+                <p>Ja. Ich unterstütze Unternehmen bei der laufenden Lohn- und Gehaltsabrechnung mit Lexware Office Lohn &amp; Gehalt.</p>
+              </div>
+            </details>
+            <details class="faq__item" id="baulohn">
+              <summary class="faq__q"><h2 class="faq__h">Bieten Sie Baulohn an?</h2></summary>
+              <div class="faq__a prose">
+                <p>Nein. Baulohn beziehungsweise Lohnabrechnung für das Baugewerbe gehört derzeit nicht zu meinem Leistungsangebot.</p>
+              </div>
+            </details>
+            <details class="faq__item" id="kombi">
+              <summary class="faq__q"><h2 class="faq__h">Können Buchhaltung und Lohnabrechnung gemeinsam betreut werden?</h2></summary>
+              <div class="faq__a prose">
+                <p>Ja. Wenn die jeweiligen Anforderungen zu meinem Leistungsumfang und der eingesetzten Software passen, können beide Bereiche gemeinsam betreut werden.</p>
+              </div>
+            </details>
+            <details class="faq__item" id="schulung">
+              <summary class="faq__q"><h2 class="faq__h">Kann ich ausschließlich eine Lexware Office Schulung buchen?</h2></summary>
+              <div class="faq__a prose">
+                <p>Ja. Sie müssen kein laufender Buchhaltungskunde sein. Auch einzelne Schulungs- oder Unterstützungstermine können separat gebucht werden.</p>
+              </div>
+            </details>
+            <details class="faq__item" id="deutschlandweit">
+              <summary class="faq__q"><h2 class="faq__h">Arbeiten Sie deutschlandweit?</h2></summary>
+              <div class="faq__a prose">
+                <p>Ja. Die Zusammenarbeit erfolgt überwiegend digital. Dadurch kann ich Unternehmen deutschlandweit betreuen.</p>
+              </div>
+            </details>
+
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="sm-footer">
+      <p class="sm-footer__name">Saskia Mesinger</p>
+      <p class="sm-footer__services">Digitale Buchhaltung · Lohnabrechnung · Finanzcontrolling · Forecasting · Lexware Office</p>
+      <p class="sm-footer__claim">Für Startups, Kleinunternehmer, Selbstständige, Einzelunternehmen und Kapitalgesellschaften - digital und deutschlandweit.</p>
+
+      <nav aria-label="Footer-Navigation">
+        <a href="../Buchhaltung/index.html">Buchhaltung</a>
+        <a href="../Lohnabrechnung/index.html">Lohnabrechnung</a>
+        <a href="../LexwareOffice/index.html">Lexware Office &amp; Schulungen</a>
+        <a href="../Vorlagen/index.html">Vorlagen &amp; Tools</a>
+        <a href="../UeberMich/index.html">Über mich</a>
+        <a href="../index.html#kontakt-start">Kontakt</a>
+      </nav>
+
+      <nav class="sm-footer__legal" aria-label="Rechtliches">
+        <a href="../impressum.html">Impressum</a>
+        <a href="../datenschutz.html">Datenschutz</a>
+        <a href="../Agb.html">AGB</a>
+        <a href="../Widerruf.html">Widerruf</a>
+      </nav>
+
+      <div class="sm-footer__meta">
+        <span>© <span id="year"></span> Saskia Mesinger</span>
+        <span>Website erstellt durch <a href="https://fuerst-software.com" target="_blank" rel="noopener noreferrer">Fürst Software &amp; Web Development</a></span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+  <script src="../responsive.js" defer></script>
+
+</body>
+</html>

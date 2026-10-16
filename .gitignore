@@ -1,0 +1,5 @@
+# Lokale Tool-Konfiguration
+.claude/
+
+# Live-Domain nicht im Dev-Repo (sonst Konflikt mit GitHub Pages der Live-Seite)
+CNAME
