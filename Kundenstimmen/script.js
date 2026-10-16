@@ -4,6 +4,17 @@
 // Data (NUR echte Stimmen)
 const TESTIMONIALS = [
   {
+    name: "Andreas Lohberger",
+    company: "",
+    project: "Zusammenarbeit",
+    category: "Zusammenarbeit",
+    date: "",
+    rating: 5,
+    reviewUrl: "https://maps.app.goo.gl/JbewGVR3qx863Xz56",
+    quote:
+`Kann ich mit bestem Gewissen bedingungslos empfehlen`
+  },
+  {
     name: "Kadir Türker",
     company: "",
     project: "Lexware / Buchhaltung",
