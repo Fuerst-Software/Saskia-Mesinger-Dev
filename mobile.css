@@ -46,6 +46,15 @@
   .offer .btn{ padding: 10px 14px; letter-spacing: .08em; }
   .card{ padding: 20px !important; }
 
+  /* Menü (drei Punkte): alle Punkte linksbündig, auch wenn einer umbricht
+     (responsive.js zentriert sonst per Inline-Style) */
+  .overlay__link{
+    text-align: left !important;
+    font-size: 1.2rem !important;
+    letter-spacing: .14em !important;
+    line-height: 1.35 !important;
+  }
+
   /* Abschnitts-Kacheln der Unterseiten: nichts ragt über den Rand */
   .navgrid__btn{
     min-width: 0;

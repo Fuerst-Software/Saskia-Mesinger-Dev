@@ -385,6 +385,9 @@
     if (!isMobile()) return;
 
     const el = findElementWithText(REGEX);
+    // Header-Marke (.lux-brand) nie überschreiben: dort sitzen gestylte Spans
+    // (Name + Unterzeile), die sonst verloren gehen. Die Marke bleibt wie am Desktop.
+    if (el && el.closest(".site-header")) return;
     if (!el) return;
 
     // Wenn schon umgebaut -> nicht ständig neu schreiben
